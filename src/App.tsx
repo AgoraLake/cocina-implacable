@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import logoImage from "@/imports/COCINA_LOGO.jpg";
-import brandImage from "@/imports/image.png";
+import logoImage from "./imports/COCINA_LOGO.jpg";
+//import brandImage from "@/imports/image.png";
 
 const NAV_LINKS = [
   { label: "Quiénes Somos", href: "#quienes-somos" },
@@ -224,7 +224,7 @@ export default function App() {
             <div className="relative">
               <div className="absolute inset-0 rounded-full blur-3xl bg-[rgba(196,122,53,0.15)] scale-110" />
               <img
-                src={brandImage}
+                //src={brandImage}
                 alt="Cocina Implacable — El Arte del Aseo en la Cocina"
                 className="relative w-72 md:w-96 object-contain drop-shadow-2xl"
               />
