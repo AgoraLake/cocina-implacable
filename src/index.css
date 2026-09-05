@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;700;800;900&family=Outfit:wght@300;400;500;600&display=swap');
+@import 'tailwindcss';
+
+@theme inline {
+  --color-copper: #C47A35;
+  --color-copper-light: #D8954A;
+  --color-copper-dark: #A35E1E;
+  --color-steel: #8A8A8A;
+  --color-concrete: #1C1C1E;
+  --color-surface: #252527;
+  --color-surface-2: #2E2E30;
+  --color-border: rgba(196, 122, 53, 0.25);
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background-color: #1C1C1E;
+  color: #F0EDE8;
+  font-family: 'Outfit', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Roboto Slab', serif;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #1C1C1E; }
+::-webkit-scrollbar-thumb { background: #C47A35; border-radius: 3px; }
+
+/* Smooth scroll */
+html { scroll-behavior: smooth; }
+
+/* Copper gradient text */
+.text-copper-gradient {
+  background: linear-gradient(135deg, #C47A35 0%, #E8A95A 50%, #C47A35 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Hex clip path */
+.clip-hex {
+  clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+}
+
+/* Nav blur */
+.nav-blur {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
